@@ -4,7 +4,7 @@
 <?php
 if (empty($_SESSION['CodeRegister']) OR $_SESSION['CodeRegister'] == ""){
 ?>
-    <form action="register/register/signup" method="post">
+    <form action="index.php/register/register/signup" method="post">
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -93,7 +93,7 @@ if (empty($_SESSION['CodeRegister']) OR $_SESSION['CodeRegister'] == ""){
                     </div>
                     <div class="col-4"></div>
                     <div class="col-4">
-                      <a href="auth/login" class="btn btn-primary btn-block">Login</a>
+                      <a href="index.php/auth/login" class="btn btn-primary btn-block">Login</a>
                     </div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ if (empty($_SESSION['CodeRegister']) OR $_SESSION['CodeRegister'] == ""){
   // print_r($_SESSION["dataRegister"]);
 ?>
     <section class="content">
-      <form action="register/register/codeIn" method="post" enctype="multipart/form-data">
+      <form action="index.php/register/register/codeIn" method="post" enctype="multipart/form-data">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
@@ -160,7 +160,7 @@ if (empty($_SESSION['CodeRegister']) OR $_SESSION['CodeRegister'] == ""){
                 ?>
                 </div>
                 <div class="card-footer">
-                  <a href="auth/session/outSession" class="btn btn-outline-dark" data-dismiss="modal">
+                  <a href="index.php/auth/session/outSession" class="btn btn-outline-dark" data-dismiss="modal">
                     <i class="fa-regular fa-circle-xmark"></i> Batal
                   </a>
                   <button type="submit" name="submit" class="btn btn-outline-success">

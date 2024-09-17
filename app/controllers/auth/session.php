@@ -34,7 +34,7 @@ class session extends CI_Controller {
 			$_SESSION['ketStruktural'] = $data['data']['0']['ketStruktural'];
 			$_SESSION['statusUser'] = $data['data']['0']['statusUser'];
 			
-			redirect('./admin/dashboard/homeAdmin');
+			redirect('index.php/admin/dashboard/homeAdmin');
 		} else {
 			$_SESSION['alertLogin'] = 0;
 			redirect('auth/login');

@@ -19,7 +19,7 @@ $dataSession =  $_SESSION['alertLogin'];
     <div class="card-body login-card-body">
       <p class="login-box-msg">Masuk untuk memulai sesi Anda</p>
 
-      <form action="auth/session/inSession" method="post">
+      <form action="index.php/auth/session/inSession" method="post">
         <div class="input-group mb-3">
           <input type="email" name="email" class="form-control" placeholder="Email" required>
           <div class="input-group-append">
@@ -51,12 +51,12 @@ $dataSession =  $_SESSION['alertLogin'];
         </div>
         <div class="row" style="margin-top:4px">
           <div class="col-6">
-            <a href="register/register">
+            <a href="index.php/register/register">
               <button type="button" class="btn btn-primary btn-block">Register</button>
             </a>
           </div>
           <div class="col-6">
-            <a href="auth/session/outSession">
+            <a href="index.php/auth/session/outSession">
               <button type="button" class="btn btn-danger btn-block">Keluar</button>
             </a>
           </div>
