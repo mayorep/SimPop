@@ -1,0 +1,40 @@
+http://192.168.40.113/ci-apiserver/?key= MG12Q1dTNVNTN1dkSlgwTlYzcE9kNkFMTkdpaFd1VXZaQVQy
+
+format : randomcode@id@password@randomcode
+Format private : 12345@idClien@idapp@mayet_orep@56789
+value : 12345@1@1@mayet_orep@56789
+encript : MjJQRVdpNG5QOHVBV0NaT0V5TVZWdVVxRkh5U0hyVjhOVUttWmU4R1RNeGFCSGVCdW8wM2w3K0I=
+
+
+
+postman by json
+========== Encript ==========
+{
+    "i" : "00.00.0000",
+    "ia" : "In-WD-to-HRIS",
+    "pu" : "EDP-Mustikatama",
+    "pr" : "Mustikatama-Group"
+}
+
+url : http://192.168.40.113/Api_Mustikatama_1/security/securityAccess/encriptDataApi
+
+========== Create ==========
+{
+    "i" : "22.01.0808",
+    "ia" : "1",
+    "ket" : "Wildan-EDP-Mustikatama-Group"
+}
+
+http://192.168.40.113/Api_Mustikatama_1/security/securityAccess/cr
+
+{
+    "PrivateKey": "b1huNDVYU2E5YjNoU2tsMkRwT2Q4VE9xQU4xdFFxZEhNY2hxWjBqVlpTSDA1VGVtWEpxZVQ5cWNvKzZCZ3RISmRyYlRZdz09",
+    "PublicKey": "ckhmMjQzU2E5S1BqU1ZWMEJJMlZnQ3phRGQ5c1JxRk1Kc3diZVV2VmJTSHk="
+}
+
+
+====================================================
+{
+    "PrivateKey": "b1huNDVYU2E5YjNoU2tsMkRwT2Q4VE9xQU4xdFFxZEhNY2hxWjBqVlpTSDA1VGVtWEpxZVQ5cWNvKzZCZ3RISmRyYlRZdz09",
+    "PublicKey": "ckhmMjQzU2E5S1BqU1ZWMEJJMlZnQ3phRGQ5c1JxRk1Kc3diZVV2VmJTSHk="
+}
