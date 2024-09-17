@@ -12,7 +12,7 @@
     </div>
     <div class="container-xxl py-5">
         <div class="container">
-            <iframe src="admin/pertanyaan/pertanyaan/pertanyaan/publicView" style="width:100%;min-height:1000px"></iframe>
+            <iframe src="index.php/admin/pertanyaan/pertanyaan/pertanyaan/publicView" style="width:100%;min-height:1000px"></iframe>
         </div>
     </div>
         

@@ -14,7 +14,7 @@ class pertanyaan extends CI_Controller {
 	public function index() {
 		$data = $this->mPertanyaan->semuaDataDaftarPertanyaan($status);
 		if (empty($_SESSION['page'])) {
-			redirect('./auth/session/outSession');
+			redirect('index.php/auth/session/outSession');
 		} else {
 			$_SESSION['page'] = "APertanyaan";
 			$_SESSION['datavPertanyaan'] = $data;
