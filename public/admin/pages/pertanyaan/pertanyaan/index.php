@@ -34,8 +34,8 @@
               <div class="card-body">
                 <div id="accordion">
                   <?php
-                  $numrow = count($_SESSION['datavPertanyaan']);
-                  for ($i=0;$i<=$numrow;$i++) {
+                  $numrow = count($_SESSION['datavPertanyaan']['data']);
+                  for ($i=0;$i<$numrow;$i++) {
                     // echo $numrow;
                   ?>
                   <div class="card card-primary">

@@ -25,8 +25,9 @@ class pertanyaan extends CI_Controller {
 
 	public function publicView() {
 		$data = $this->mPertanyaan->semuaDataDaftarPertanyaan($status);
-		$_SESSION['datavPertanyaan'] = $data;
+		$_SESSION['datavPertanyaan2'] = $data;
 		$_SESSION['report'] = '';
+		// print_r($data);
 		$this->load->view('admin/pages/pertanyaan/pertanyaan/publicView');
 	}
 

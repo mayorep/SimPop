@@ -56,21 +56,21 @@
               <div class="card-body">
                 <div id="accordion">
                   <?php
-                  $numrow = count($_SESSION['datavPertanyaan']);
-                  for ($i=0;$i<=$numrow;$i++) {
+                  $numrow = count($_SESSION['datavPertanyaan2']['data']);
+                  for ($i=0;$i<$numrow;$i++) {
                     // echo $numrow;
                   ?>
                   <div class="card card-primary">
                     <div class="card-header">
                       <a class="d-block w-100" data-toggle="collapse" href="#collapseOne<?php echo $i ?>">
                         <h4 class="card-title w-100">
-                          <?php echo $_SESSION['datavPertanyaan']['data'][$i]['tx_pertanyaan'];?>
+                          <?php echo $_SESSION['datavPertanyaan2']['data'][$i]['tx_pertanyaan'];?>
                         </h4>
                       </a>
                     </div>
                     <div id="collapseOne<?php echo $i ?>" class="collapse" data-parent="#accordion">
                       <div class="card-body">
-                        <?php echo $_SESSION['datavPertanyaan']['data'][$i]['tx_jawaban'] ?>
+                        <?php echo $_SESSION['datavPertanyaan2']['data'][$i]['tx_jawaban'] ?>
                       </div>
                     </div>
                   </div>
