@@ -3,7 +3,8 @@ if (empty($_SESSION['login'])) {
     if ($_SESSION["page"] == "PHome" OR $_SESSION["page"] == "PArtikel" 
     OR $_SESSION["page"] == "PPengumuman"  OR $_SESSION["page"] == "PPertanyaan"  
     OR $_SESSION["page"] == "PTesTimoni" OR $_SESSION["page"] == "PKontak"
-    OR $_SESSION["page"] == "PPendaftaran" OR $_SESSION["page"] == "PTentangKami") {
+    OR $_SESSION["page"] == "PPendaftaran" OR $_SESSION["page"] == "PTentangKami"
+    OR $_SESSION["page"] == "PEdukasi") {
 ?>
     <div class="container-fluid nav-bar bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
@@ -22,6 +23,7 @@ if (empty($_SESSION['login'])) {
                             <a href="index.php/public/informasi/pengumuman/pengumuman" class="dropdown-item">Pengumuman</a>
                             <a href="index.php/public/informasi/artikel/artikel" class="dropdown-item">Artikel</a>
                             <!-- <a href="testimonial.html" class="dropdown-item">Testimoni</a> -->
+                            <a href="index.php/public/informasi/edukasi/edukasi" class="dropdown-item">Edukasi Pra-OP</a>
                             <a href="index.php/public/informasi/pertanyaan/pertanyaan" class="dropdown-item">FAQ</a>
                         </div>
                     </div>
@@ -53,9 +55,9 @@ if (empty($_SESSION['login'])) {
 }else {
 ?>
     <!-- Preloader -->
-    <!-- <div class="preloader flex-column justify-content-center align-items-center">
+    <div class="preloader flex-column justify-content-center align-items-center">
         <img class="animation__wobble" src="./public/img/logo/logo2.png" style="width:20%">
-    </div> -->
+    </div>
 
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-dark">
@@ -150,6 +152,12 @@ if (empty($_SESSION['login'])) {
                         <a href="index.php/admin/Informasi/pengumuman/pengumuman" class="nav-link">
                             <i class="far fa-solid fa-bullhorn nav-icon"></i>
                             <p>Pengumuman</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.php/admin/Informasi/edukasi/edukasi" class="nav-link">
+                            <i class="fa-solid fa-book-open nav-icon"></i>
+                            <p>Edukasi</p>
                         </a>
                     </li>
                     <!-- <li class="nav-item">

@@ -84,18 +84,18 @@ class artikel extends CI_Controller {
 			if ($tambah == 1) {
 				$report = 1;	
 				$_SESSION['report'] = '1';
-				redirect('./admin/Informasi/artikel/artikel');
+				redirect('index.php/admin/Informasi/artikel/artikel');
 			}else{
 				$id = $_SESSION['ambilIdArtikel'];
 				$tambah = $this->mArtikel->dellArtikel($id);
 				$report = 0;
 				$_SESSION['report'] = '0';
-				redirect('./admin/Informasi/artikel/artikel');
+				redirect('index.php/admin/Informasi/artikel/artikel');
 			}
 		}else{
 			$report = 0;
 			$_SESSION['report'] = '0';
-			redirect('./admin/Informasi/artikel/artikel');
+			redirect('index.php/admin/Informasi/artikel/artikel');
 		}
 
 		return $report;
@@ -119,10 +119,10 @@ class artikel extends CI_Controller {
 			$edit = $this->mArtikel->editdataArtikel($id, $judul, $isi);
 			if ($edit == 1) {
 				$_SESSION['report'] = 1;
-				redirect('./admin/Informasi/artikel/artikel');
+				redirect('index.php/admin/Informasi/artikel/artikel');
 			}else{
 				$_SESSION['report'] = 0;
-				redirect('./admin/Informasi/artikel/artikel');
+				redirect('index.php/admin/Informasi/artikel/artikel');
 			}
 		} else {
 			$edit = $this->mArtikel->editdataArtikel($id, $judul, $isi);
@@ -135,15 +135,15 @@ class artikel extends CI_Controller {
 				if ($reupload == 1) {
 					$report = 1;
 					$_SESSION['report'] = 1;	
-					redirect('./admin/Informasi/artikel/artikel');
+					redirect('index.php/admin/Informasi/artikel/artikel');
 				}else{
 					$report = 0;
 					$_SESSION['report'] = 0;
-					redirect('./admin/Informasi/artikel/artikel');
+					redirect('index.php/admin/Informasi/artikel/artikel');
 				}
 			}else{
 				$_SESSION['report'] = 0;
-				redirect('./admin/Informasi/artikel/artikel');
+				redirect('index.php/admin/Informasi/artikel/artikel');
 			}
 	
 		}

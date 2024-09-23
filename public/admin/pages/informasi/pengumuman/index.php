@@ -166,6 +166,7 @@
                       $linkPublish = "index.php/admin/informasi/pengumuman/pengumuman/updatePublis?i=$id";
                       $linkPrivasi = "index.php/admin/informasi/pengumuman/pengumuman/updatePrivasi?i=$id";
                       $linkEdit = "index.php/admin/informasi/pengumuman/pengumuman/viewEditPengumuman?i=$id";
+                      if ($_SESSION['idlevel'] == 3 & $_SESSION['dataPengumuman2']['data'][$i]['status_pengumuman']==0){}else{
                     ?>
                     
                     <tr>
@@ -215,6 +216,7 @@
                       </td>
                     </tr>
                     <?php
+                      }
                     }
                     ?>
                   </tbody>

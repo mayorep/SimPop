@@ -3,7 +3,8 @@ if (empty($_SESSION['login'])) {
     if ($_SESSION["page"] == "PHome" OR $_SESSION["page"] == "PArtikel" 
     OR $_SESSION["page"] == "PPengumuman"  OR $_SESSION["page"] == "PPertanyaan"  
     OR $_SESSION["page"] == "PTesTimoni" OR $_SESSION["page"] == "PKontak"
-    OR $_SESSION["page"] == "PPendaftaran" OR $_SESSION["page"] == "PTentangKami") {
+    OR $_SESSION["page"] == "PPendaftaran" OR $_SESSION["page"] == "PTentangKami"
+    OR $_SESSION["page"] == "PEdukasi") {
 ?>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">

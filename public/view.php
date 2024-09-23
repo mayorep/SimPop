@@ -5,8 +5,7 @@ include "./public/theme/navbar.php";
 if (empty($_SESSION['login'])) {
     if (empty($_SESSION['page'])) {
         $_SESSION['page'] = "PHome";
-    }
-    if ($_SESSION["page"] == "PHome") {
+    } elseif ($_SESSION["page"] == "PHome") {
         include "./public/viewPublic/index.php";
     } elseif ($_SESSION["page"] == "PArtikel") {
         include "./public/viewPublic/page/informasi/artikel/index.php";
@@ -22,7 +21,13 @@ if (empty($_SESSION['login'])) {
         include "./public/viewPublic/";
     } elseif ($_SESSION["page"] == "PTentangKami") {
         include "./public/viewPublic/";
-    } elseif ($_SESSION["page"] == "LoginPage") {
+    } 
+    
+    elseif ($_SESSION["page"] == "PEdukasi") {
+        include "./public/viewPublic/page/informasi/edukasi/index.php";
+    }
+    
+    elseif ($_SESSION["page"] == "LoginPage") {
         include "./public/admin/pages/login/index.php";
     } elseif ($_SESSION["page"] == "Register") {
         include "./public/admin/pages/register/index.php";
@@ -59,6 +64,8 @@ if (empty($_SESSION['login'])) {
         include "./public/admin/pages/pengaturan/struktural/index.php";
     } elseif ($_SESSION["page"] == "ATesti") {
         include "./public/admin/pages/informasi/testTimoni/index.php";
+    } elseif ($_SESSION["page"] == "AEdukasi") {
+        include "./public/admin/pages/informasi/edukasi/index.php";
     } else {
         redirect('auth/session/outSession');
     }

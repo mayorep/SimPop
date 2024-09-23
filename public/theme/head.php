@@ -2,10 +2,38 @@
 <html lang="en">
 <?php
 if (empty($_SESSION['login'])) {
-    if ($_SESSION["page"] == "PHome" OR $_SESSION["page"] == "PArtikel" 
-    OR $_SESSION["page"] == "PPengumuman"  OR $_SESSION["page"] == "PPertanyaan"  
-    OR $_SESSION["page"] == "PTesTimoni" OR $_SESSION["page"] == "PKontak"
-    OR $_SESSION["page"] == "PPendaftaran" OR $_SESSION["page"] == "PTentangKami") {
+
+    if ($_SESSION["page"] == "LoginPage") {
+?>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SimPop RSUD T.C. HILLERS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="./public/admin/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="./public/admin/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+<?php 
+    } elseif ($_SESSION["page"] == "Register") {
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SimPop RSUD T.C. HILLERS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="./public/admin/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="./public/admin/dist/css/adminlte.min.css">
+  
+</head>
+<body class="hold-transition register-page">
+<div class="wrapper">
+<?php
+    } else {
 ?>
 <head>
     <meta charset="utf-8">
@@ -40,11 +68,11 @@ if (empty($_SESSION['login'])) {
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
 
 
@@ -82,37 +110,6 @@ if (empty($_SESSION['login'])) {
         </div>
     </div>
     <!-- Topbar End -->
-
-<?php
-    } elseif ($_SESSION["page"] == "LoginPage") {
-?>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SimPop RSUD T.C. HILLERS</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <link rel="stylesheet" href="./public/admin/plugins/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="./public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <link rel="stylesheet" href="./public/admin/dist/css/adminlte.min.css">
-</head>
-<body class="hold-transition login-page">
-<?php 
-    } elseif ($_SESSION["page"] == "Register") {
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SimPop RSUD T.C. HILLERS</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <link rel="stylesheet" href="./public/admin/plugins/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="./public/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <link rel="stylesheet" href="./public/admin/dist/css/adminlte.min.css">
-  
-</head>
-<body class="hold-transition register-page">
-<div class="wrapper">
 <?php
     }
 } else {
